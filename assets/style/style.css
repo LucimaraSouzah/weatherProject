@@ -63,6 +63,7 @@ body {
 
 .search img {
   width: 30px;
+  cursor: pointer;
 }
 
 .container {
@@ -73,6 +74,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  height: 0;
+  transition: 1s;
 }
 
 .content {
@@ -90,24 +94,23 @@ body {
 .place-info {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
   align-items: center;
 }
 
 .weather-content {
   display: flex;
+  align-items: center;
 }
 
 .weather {
   display: flex;
   flex-direction: column;
-  margin-right: 50px;
+  margin-right: 20px;
   align-items: center;
 }
 
 .time {
-  margin-top: 20px;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .weather-info {
