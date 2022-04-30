@@ -1,40 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/images/icon.png">
-    <link rel="stylesheet" href="assets/style/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/images/icon.png" />
+    <link rel="stylesheet" href="assets/style/style.css" />
     <title>inWeather</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="header">
-        <img class="icon-weather" src="assets/images/chuva.svg" alt="Ícone do tempo">
-        <h1>inWeather</h1>
+      <img
+        class="icon-weather"
+        src="assets/images/chuva.svg"
+        alt="Ícone do tempo"
+      />
+      <h1>inWeather</h1>
     </div>
     <div class="search">
-        <input class="input-search" type="text" placeholder="Digite o local">
-        <img class="icon-search" src="assets/images/lupa.svg" alt="Ícone de pesquisar">
+      <input class="input-search" type="text" placeholder="Digite o local" />
+      <img
+        class="icon-search"
+        src="assets/images/lupa.svg"
+        alt="Ícone de pesquisar"
+      />
     </div>
-   <div class="container">
-       <div class="content">
-           <div class="place-info">
-            <p class="date">20/12/2020</p>
-            <p class="city">Conselheiro Lafaiete - MG</p>
-           </div>
-           <div class="weather-content">
-               <div class="weather">
-                   <img src="assets/images/icons8-chuva-48.png" alt="Ícone do tempo atual">
-                   <p class="time">Chuva</p>
-               </div>
-               <div class="weather-info">
-                   <p class="temperature">20ºC</p>
-                    <p class="humidity">Umidade: 70%</p>
-                    <p class="wind">16km/h</p>
-               </div>
-           </div>
-       </div>
-   </div>
-</body>
+    <div class="container">
+      <div class="content">
+        <div class="place-info">
+          <p class="date">20/12/2020</p>
+          <p class="city">Conselheiro Lafaiete - MG</p>
+        </div>
+        <div class="weather-content">
+          <div class="weather">
+            <img
+              class="weather-current"
+              src="assets/images/icons8-chuva-48.png"
+              alt="Ícone do tempo atual"
+            />
+            <p class="time">Chuva</p>
+          </div>
+          <div class="weather-info">
+            <p class="temperature">20ºC</p>
+            <p class="humidity">Umidade: 70%</p>
+            <p class="wind">16km/h</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
