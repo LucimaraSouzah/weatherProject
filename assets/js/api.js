@@ -2,7 +2,7 @@ const api = {
   key: "913d3c5c6c64b052a989832c27899079",
   base: "https://api.openweathermap.org/data/2.5/",
   lang: "pt_br",
-  city: "Conselheiro Lafaiete",
+  city: 'Conselheiro Lafaiete',
   get link() {
     return `https://api.openweathermap.org/data/2.5/weather?q=${encodeURI(
       this.city

@@ -12,15 +12,25 @@ let container = document.querySelector(".container")
 
 search.addEventListener("keyup", async (e) => {
   if (e.code == "Enter") {
+      api.city = search.value
+      await api.info()  
+      if(getWeather())
+      container.style.height = "50%"
+}})
+
+btnSearch.addEventListener("click", async (e) => {
     api.city = search.value
     await api.info()
-    getWeather()
+    if(getWeather())
     container.style.height = "50%"
-  }
 })
 
 function getWeather() {
   date.innerHTML = newdate
+  if (api.b.cod == 404) {
+    alert('Cidade não encontrada!')
+    return false
+  }
   city.innerHTML = api.b.name + " - " + api.b.sys.country
   time.innerHTML =
     api.b.weather[0].description.charAt(0).toUpperCase() +
@@ -29,6 +39,7 @@ function getWeather() {
   temperature.innerHTML = Math.round(api.b.main.temp) + "ºC"
   humidity.innerHTML = api.b.main.humidity + "%"
   wind.innerHTML = Math.round(api.b.wind.speed * 3.6) + " Km/h"
+  return true
 }
 
 var dateObj = new Date()
@@ -38,9 +49,5 @@ var year = dateObj.getUTCFullYear()
 
 newdate = day + "/" + month + "/" + year
 
-btnSearch.addEventListener("click", async (e) => {
-  api.city = search.value
-  await api.info()
-  getWeather()
-  container.style.height = "50%"
-})
+
+

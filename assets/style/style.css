@@ -20,7 +20,7 @@ body {
 .header {
   display: flex;
   align-items: center;
-  justify-center: center;
+  justify-content: center;
   margin-bottom: 50px;
   gap: 20px;
 }
